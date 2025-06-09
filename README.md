@@ -21,7 +21,7 @@ Aplicación Android para gestionar tareas diarias de forma sencilla y eficiente.
 
 ## 📷 Capturas de pantalla
 
-
+-----
 
 ## 🚀 Cómo ejecutar
 
