@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_respaldo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:fitsSystemWindows="true"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/titulo_respaldo"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp" />
+
+    <RadioGroup
+        android:id="@+id/rg_respaldo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/rb_dropbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/opcion_dropbox" />
+
+        <RadioButton
+            android:id="@+id/rb_drive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/opcion_drive" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_realizar_respaldo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/boton_respaldo"
+        android:layout_marginTop="16dp"/>
+</LinearLayout>

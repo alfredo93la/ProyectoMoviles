@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll_consultar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Título -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/titulo_consulta"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Tipo de consulta -->
+        <RadioGroup
+            android:id="@+id/rg_tipo_consulta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_rango"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/por_rango" />
+
+            <RadioButton
+                android:id="@+id/rb_anio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/por_anio" />
+
+            <RadioButton
+                android:id="@+id/rb_dia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/por_dia" />
+
+            <RadioButton
+                android:id="@+id/rb_mes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/por_mes" />
+        </RadioGroup>
+
+        <!-- Categoría (horizontal con scroll) -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/categoria"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <RadioGroup
+                android:id="@+id/rg_categoria_consulta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_cita"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cita" />
+
+                <RadioButton
+                    android:id="@+id/rb_junta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/junta" />
+
+                <RadioButton
+                    android:id="@+id/rb_entrega"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/entrega" />
+
+                <RadioButton
+                    android:id="@+id/rb_examen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/examen" />
+
+                <RadioButton
+                    android:id="@+id/rb_otro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/otro" />
+            </RadioGroup>
+        </HorizontalScrollView>
+
+
+        <!-- Fecha Inicial -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fecha_inicial"
+                android:layout_marginEnd="8dp" />
+
+            <EditText
+                android:id="@+id/et_fecha_inicio"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:autofillHints="none"
+                android:focusable="false"
+                android:clickable="true"
+                android:hint="@string/hint_fecha"
+                android:inputType="none"
+                tools:ignore="KeyboardInaccessibleWidget,TouchTargetSizeCheck" />
+        </LinearLayout>
+
+        <!-- Fecha Final -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fecha_final"
+                android:layout_marginEnd="8dp" />
+
+            <EditText
+                android:id="@+id/et_fecha_fin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:autofillHints="none"
+                android:focusable="false"
+                android:clickable="true"
+                android:hint="@string/hint_fecha"
+                android:inputType="none"
+                tools:ignore="KeyboardInaccessibleWidget,TouchTargetSizeCheck" />
+        </LinearLayout>
+
+        <!-- Botón Consultar -->
+        <Button
+            android:id="@+id/btn_consultar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/boton_consultar"
+            android:layout_marginTop="16dp" />
+
+        <!-- Resultados -->
+        <TableLayout
+            android:id="@+id/tabla_resultados"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*"
+            android:layout_marginTop="16dp"
+            android:background="#EEEEEE">
+
+            <TableRow android:background="#CCCCCC">
+                <TextView android:text="@string/col_fecha" android:padding="6dp" android:textStyle="bold"/>
+                <TextView android:text="@string/col_hora" android:padding="6dp" android:textStyle="bold"/>
+                <TextView android:text="@string/col_categoria" android:padding="6dp" android:textStyle="bold"/>
+                <TextView android:text="@string/col_status" android:padding="6dp" android:textStyle="bold"/>
+                <TextView android:text="@string/col_descripcion" android:padding="6dp" android:textStyle="bold"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView android:text="2025-06-07" android:padding="6dp"/>
+                <TextView android:text="10:00" android:padding="6dp"/>
+                <TextView android:text="@string/cita" android:padding="6dp"/>
+                <TextView android:text="@string/pendiente" android:padding="6dp"/>
+                <TextView android:text="Ejemplo de evento" android:padding="6dp"/>
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+</ScrollView>

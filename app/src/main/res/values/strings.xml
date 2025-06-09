@@ -1,0 +1,109 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- General -->
+    <string name="app_name">ProyectoMoviles</string>
+    <string name="navigation_drawer_open">Abrir menú</string>
+    <string name="navigation_drawer_close">Cerrar menú</string>
+
+    <string name="inicio">Inicio</string>
+    <string name="consultar">Consultar</string>
+    <string name="salir">Salir</string>
+
+    <!-- Menú lateral (drawer) -->
+    <string name="menu">Menú</string>
+    <string name="anadir_eventos">Añadir eventos</string>
+    <string name="consultar_eventos">Consultar eventos</string>
+    <string name="respaldo">Respaldo</string>
+    <string name="restaurar">Restaurar</string>
+    <string name="acerca_de">Acerca de…</string>
+
+
+    <!-- ====== Pantalla: Inicio ====== -->
+    <string name="titulo_inicio">Eventos del día</string>
+    <string name="evento_demo_fecha">📅 07/06/2025 – 10:00 AM</string>
+    <string name="evento_demo_categoria">📌 Categoría: Cita</string>
+    <string name="evento_demo_status">⏳ Estado: Pendiente</string>
+    <string name="evento_demo_contacto" tools:ignore="Typos">👤 Con: Profesor Ramírez</string>
+    <string name="evento_demo_ubicacion">📍 Aula 301</string>
+
+    <!-- ====== Pantalla: Añadir Evento ====== -->
+    <string name="titulo_anadir_evento">Añadir Evento</string>
+    <string name="categoria">Categoría:</string>
+    <string name="fecha">Fecha:</string>
+    <string name="hora">Hora:</string>
+    <string name="descripcion">Descripción:</string>
+    <string name="estatus">Status:</string>
+    <string name="ubicacion">Ubicación:</string>
+    <string name="contacto">Contacto:</string>
+    <string name="guardar">Guardar</string>
+
+    <!-- Hints para EditText -->
+    <string name="hint_fecha">dd/mm/aaaa</string>
+    <string name="hint_hora">--:--</string>
+    <string name="hint_descripcion">Escribe aquí</string>
+    <string name="hint_ubicacion">Seleccionar ubicación</string>
+    <string name="hint_contacto">Seleccionar contacto</string>
+
+    <!-- Categorías -->
+    <string name="cita">Cita</string>
+    <string name="junta">Junta</string>
+    <string name="entrega">Entrega de Proyecto</string>
+    <string name="examen">Examen</string>
+    <string name="otro">Otro</string>
+
+    <!-- Estatus posibles -->
+    <string name="pendiente">Pendiente</string>
+    <string name="realizado">Realizado</string>
+    <string name="aplazado">Aplazado</string>
+
+    <!-- ====== Pantalla: Consultar Evento ====== -->
+    <string name="titulo_consulta">Consultar eventos</string>
+    <string name="por_rango">Por rango</string>
+    <string name="por_anio">Por año</string>
+    <string name="por_dia">Por día</string>
+    <string name="por_mes">Por mes</string>
+    <string name="fecha_inicial">Fecha Inicial:</string>
+    <string name="fecha_final">Fecha Final:</string>
+    <string name="boton_consultar">Consultar</string>
+
+    <!-- Tabla resultados -->
+    <string name="col_fecha">Fecha</string>
+    <string name="col_hora">Hora</string>
+    <string name="col_categoria">Categoría</string>
+    <string name="col_status">Status</string>
+    <string name="col_descripcion">Descripción</string>
+
+    <!-- ====== Pantalla: Respaldo ====== -->
+    <string name="titulo_respaldo">Respaldo de datos</string>
+    <string name="opcion_dropbox">Dropbox</string>
+    <string name="opcion_drive">Google Drive</string>
+    <string name="boton_respaldo">Realizar respaldo</string>
+
+    <!-- ====== Pantalla: Restaurar ====== -->
+    <string name="titulo_restaurar">Restaurar datos</string>
+    <string name="boton_restaurar">Restaurar datos</string>
+
+    <!-- ====== Pantalla: Acerca de ====== -->
+    <string name="titulo_acerca_de">Acerca de esta aplicación</string>
+    <string name="contenido_acerca_de">
+        Organizador de tareas académicas.
+
+        Funcionalidades:
+        - Añadir eventos
+        - Consultar eventos
+        - Respaldo y restauración
+        - Notificaciones
+
+        Equipo de desarrollo:
+        -
+        -
+        -
+
+        Versión: 1.0
+    </string>
+
+    <!-- Drawer y Bottom Nav -->
+    <string name="nav_inicio">Inicio</string>
+    <string name="nav_consultar">Consultar</string>
+    <string name="nav_salir">Salir</string>
+
+</resources>

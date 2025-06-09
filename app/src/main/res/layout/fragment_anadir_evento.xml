@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll_anadir_evento"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="80dp">
+
+        <!-- Título -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/titulo_anadir_evento"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Categoría (horizontal con scroll si es necesario) -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/categoria"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <RadioGroup
+                android:id="@+id/rg_categoria"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_cita"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cita" />
+
+                <RadioButton
+                    android:id="@+id/rb_junta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/junta" />
+
+                <RadioButton
+                    android:id="@+id/rb_entrega"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/entrega" />
+
+                <RadioButton
+                    android:id="@+id/rb_examen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/examen" />
+
+                <RadioButton
+                    android:id="@+id/rb_otro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/otro" />
+            </RadioGroup>
+        </HorizontalScrollView>
+
+        <!-- Fecha -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fecha"
+                android:layout_marginEnd="8dp" />
+
+            <EditText
+                android:id="@+id/et_fecha"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:autofillHints="none"
+                android:clickable="true"
+                android:focusable="false"
+                android:hint="@string/hint_fecha"
+                android:inputType="none"
+                tools:ignore="KeyboardInaccessibleWidget,TouchTargetSizeCheck" />
+        </LinearLayout>
+
+        <!-- Hora -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hora"
+                android:layout_marginEnd="8dp" />
+
+            <EditText
+                android:id="@+id/et_hora"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:autofillHints="none"
+                android:clickable="true"
+                android:focusable="false"
+                android:hint="@string/hint_hora"
+                android:inputType="none"
+                tools:ignore="KeyboardInaccessibleWidget,TouchTargetSizeCheck" />
+        </LinearLayout>
+
+        <!-- Descripción -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/descripcion"
+                android:layout_marginEnd="8dp" />
+
+            <EditText
+                android:id="@+id/et_descripcion"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:autofillHints="text"
+                android:hint="@string/hint_descripcion"
+                android:inputType="textMultiLine"
+                tools:ignore="TouchTargetSizeCheck" />
+        </LinearLayout>
+
+        <!-- Status -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/estatus"
+                android:layout_marginEnd="8dp" />
+
+            <Spinner
+                android:id="@+id/spinner_status"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                tools:ignore="TouchTargetSizeCheck" />
+        </LinearLayout>
+
+        <!-- Ubicación -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ubicacion"
+                android:layout_marginEnd="8dp" />
+
+            <EditText
+                android:id="@+id/et_ubicacion"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:autofillHints="postalAddress"
+                android:clickable="true"
+                android:focusable="false"
+                android:hint="@string/hint_ubicacion"
+                android:inputType="none"
+                tools:ignore="KeyboardInaccessibleWidget,TouchTargetSizeCheck" />
+        </LinearLayout>
+
+        <!-- Contacto -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/contacto"
+                android:layout_marginEnd="8dp" />
+
+            <EditText
+                android:id="@+id/et_contacto"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:autofillHints="name"
+                android:clickable="true"
+                android:focusable="false"
+                android:hint="@string/hint_contacto"
+                android:inputType="none"
+                tools:ignore="KeyboardInaccessibleWidget,TouchTargetSizeCheck" />
+        </LinearLayout>
+
+        <!-- Botón Guardar -->
+        <Button
+            android:id="@+id/btn_guardar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/guardar"
+            android:layout_marginTop="16dp"/>
+    </LinearLayout>
+</ScrollView>
