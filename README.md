@@ -1,6 +1,6 @@
 # 📋 Organizador de Tareas
 
-Aplicación Android para gestionar tareas diarias de forma sencilla y eficiente. Desarrollada como parte del proyecto final de la materia de Desarrollo de Aplicaciones Móviles.
+Aplicación Android para gestionar tareas diarias de forma sencilla y eficiente. Desarrollada como parte del proyecto final de la materia de Desarrollo de Aplicaciones Móviles Nativas.
 
 ## ✨ Funcionalidades
 
@@ -21,7 +21,7 @@ Aplicación Android para gestionar tareas diarias de forma sencilla y eficiente.
 
 ## 📷 Capturas de pantalla
 
-(Agrega aquí tus screenshots más adelante)
+
 
 ## 🚀 Cómo ejecutar
 
